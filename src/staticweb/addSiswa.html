@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/script.js"></script>
+        <title>Tambah Siswa</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title"><a href="addSiswa.html">Tambah Siswa</a></h1>
+            <div class="top-bar">
+                <ul>
+                    <li class="h"><a href="index.html">HOME</a></li>
+                    <li><a href="showUser.html">Data User</a></li>
+                    <li><a href="showWalkas.html">Data Wali Kelas</a></li>
+                    <li><a href="showSiswa.html">Data Siswa</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="#" onclick="clearData()">Clear Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="mModal" class="modal">
+            <div id="modal-contents" class="modal-content">
+                <span class="close">&times;</span>
+                <span id="message"></span>
+            </div>
+        </div>
+        <br /><br />
+        <div class="rowAdd">
+            <div class="colAdd">
+                <form method="post">
+                    <div class="input-field">
+                        <input type="text" name="NIS" id="add-nis" maxlength="40" placeholder="NIS ex: 2212345xxx" />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="NamaSiswa" id="add-ns" placeholder="Nama Siswa ex: Ratna Permata" />
+                    </div>
+                    <br />
+                    <div class="drop-down">
+                        <select name="Kelas" id="add-class">
+                            <option value="null">Pilih Kelas</option>
+                            <option value="10-A">10-A</option>
+                            <option value="10-B">10-B</option>
+                            <option value="10-C">10-C</option>
+                            <option value="10-D">10-D</option>
+                            <option value="10-E">10-E</option>
+                            <option value="10-F">10-F</option>
+                            <option value="11-A">11-A</option>
+                            <option value="11-B">11-B</option>
+                            <option value="11-C">11-C</option>
+                            <option value="11-D">11-D</option>
+                            <option value="11-E">11-E</option>
+                            <option value="11-F">11-F</option>
+                            <option value="12-A">12-A</option>
+                            <option value="12-B">12-B</option>
+                            <option value="12-C">12-C</option>
+                            <option value="12-D">12-D</option>
+                            <option value="12-E">12-E</option>
+                            <option value="12-F">12-F</option>
+                        </select>
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="tahunAjaran" value="2021-2022" id="add-ta" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="biayaSpp" value="250000" id="add-spp" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="jatuhTempo" value="2022-03-30" id="add-jt" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="transaksi" value="Belum Lunas" id="add-t" readonly />
+                    </div>
+                    <br />
+                </form>
+                <input type="submit" value="Simpan" onclick="addSiswa()" />
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="foot-bar">
+            <footer>
+                <p>Author: ©Shirohaku Dev Team-2022</p>
+                <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

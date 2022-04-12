@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Data User</title>
+    </head>
+    <body onload="showUser()">
+        <div class="header">
+            <h1 class="title"><a href="showUser.html">Data User</a></h1>
+            <div class="top-bar">
+                <ul>
+                    <li class="h"><a href="index.html">HOME</a></li>
+                    <li><a href="showUser.html">Data User</a></li>
+                    <li><a href="showWalkas.html">Data Wali Kelas</a></li>
+                    <li><a href="showSiswa.html">Data Siswa</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="#" onclick="clearData()">Clear Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="rowShow">
+            <div class="colShow">
+                <div class="table-u">
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Username</th>
+                            <th>Role</th>
+                        </tr>
+                        <tr>
+                            <td>Afila</td>
+                            <td>ansori</td>
+                            <td>Wali Kelas</td>
+                        </tr>
+                        <tr>
+                            <td>Mona</td>
+                            <td>okane</td>
+                            <td>Petugas Bendahara</td>
+                        </tr>
+                        <tr>
+                            <td>Endah</td>
+                            <td>dunia</td>
+                            <td>Siswa</td>
+                        </tr>
+                        <tr>
+                            <td><span id="result-uname"></span></td>
+                            <td><span id="result-username"></span></td>
+                            <td><span id="result-role"></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="foot-bar">
+            <footer>
+                <p>Author: ©Shirohaku Dev Team-2022</p>
+                <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

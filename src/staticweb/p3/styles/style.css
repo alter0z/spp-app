@@ -1,0 +1,235 @@
+@font-face {
+    font-family: ProductSansRegular;
+    src: url('font/product_sans_regular.ttf');
+}
+
+@font-face {
+    font-family: ProductSansMedium;
+    src: url('font/product_sans_medium.ttf');
+}
+
+@font-face {
+    font-family: ProductSansBold;
+    src: url('font/product_sans_bold.ttf');
+}
+
+body, html {
+    Background-image: url("img/pexels-veeterzy-114979.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: ProductSansRegular;
+}
+
+h2 {
+    font-family: ProductSansMedium;
+    font-size: 26px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.profile-header {
+    font-family: ProductSansMedium;
+    font-size: 26px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #4F565E;
+}
+
+.field-card {
+    background-color: #FFF;
+    opacity: 60%;
+    padding: 1px;
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+    border-radius: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 45px;
+    padding-bottom: 90px;
+}
+
+.card-layout {
+    background-color: #F1F4F5;
+    color: #4F565E;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parent-layout {
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+input[type = 'text'], input[type = 'email'], input[type = 'number'] {
+    font-family: ProductSansRegular;
+    background: #ededed;
+    height: 50px;
+    width: 350px;
+    /* color: #4F565E; */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+input[type = 'submit'] {
+    font-family: ProductSansMedium;
+    background: #2196F3;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+input[type = 'reset'] {
+    font-family: ProductSansMedium;
+    background: #ededed;
+    height: 50px;
+    width: 100px;
+    /* color: #fff; */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+textarea {
+    font-family: ProductSansRegular;
+    background: #ededed;
+    height: 100px;
+    width: 350px;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+h4 {
+    font-family: ProductSansMedium;
+    color: rgb(48, 48, 48);
+}
+
+.radio-container {
+    padding-right: 20px;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#city {
+    font-family: ProductSansRegular;
+    background: #ededed;
+    height: 50px;
+    width: 115px;
+    /* color: #4F565E; */
+    padding-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+  
+select {
+    background: #ededed;
+    font-family: ProductSansRegular;
+    font-size: 15px;
+    padding-left: 20px;
+    height: 50px;
+    width: 120px;
+    border-radius: 16px;
+    margin-right: 10px;
+}
+
+.right-layout {
+    float: right;
+    margin-top: -575px;
+}
+
+.button-layout {
+    float: right;
+    margin-top: 70px;
+}
+
+img {
+    margin-right: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:link {
+    color: #2196F3;
+    text-decoration: none;
+}

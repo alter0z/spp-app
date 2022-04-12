@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Register</title>
+    </head>
+    <body>
+        <br /><br /><br /><br /><br />
+        <div id="mModal" class="modal">
+            <div id="modal-contents" class="modal-content">
+                <span class="close">&times;</span>
+                <span id="message"></span>
+            </div>
+        </div>
+        <br /><br />
+        <div class="rowFrom">
+            <div class="colFrom">
+                <h1 class="title-form">Membuat Akun</h1>
+                <form action="" method="post">
+                    <div class="input-field">
+                        <input type="text" name="nama" id="reg-name" placeholder="Nama ex: Asep Budi" />
+                    </div>
+                    <br />
+                    <div class="drop-down">
+                        <select name="Role" id="reg-role">
+                            <option value="null">Pilih Role</option>
+                            <option value="petugas">Petugas Bendahara</option>
+                            <option value="wali kelas">Wali Kelas</option>
+                            <option value="siswa">Siswa</option>
+                        </select>
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="username" id="reg-user" placeholder="Username ex: User123" />
+                    </div>
+                    <br />
+                    <div class="password-input">
+                        <input type="password" name="password" id="reg-pass" placeholder="Password ex: min 8 karakter" />
+                    </div>
+                    <br />
+                </form>
+                <input type="submit" value="Register" onclick="getRegister()" />
+                <p>Jika sudah memiliki akun silahkan <a href="login.html">Login disini!</a></p>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="foot-bar">
+            <footer>
+                <p>Author: ©Shirohaku Dev Team-2022</p>
+                <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <br /><br /><br /><br /><br />
+    <div id="mModal" class="modal">
+      <div id="modal-contents" class="modal-content">
+        <span class="close">&times;</span>
+        <span id="message"></span>
+      </div>
+    </div>
+    <br /><br />
+    <div class="rowFrom">
+      <div class="colFrom">
+        <h1 class="title-form">Login</h1>
+        <form action="" method="get">
+          <div class="input-field">
+            <input type="username" name="username" id="log-user" placeholder="Username ex: User123" />
+          </div>
+          <br />
+          <div class="drop-down">
+            <select name="Role" id="log-role">
+              <option value="null">Pilih Role</option>
+              <option value="petugas">Petugas Bendahara</option>
+              <option value="wali kelas">Wali Kelas</option>
+              <option value="siswa">Siswa</option>
+            </select>
+          </div>
+          <br />
+          <div class="password-input">
+            <input type="password" name="password" id="log-pass" placeholder="Password ex: min 8 karakter" />
+          </div>
+          <br />
+        </form>
+        <input type="submit" name="Login" value="Login" onclick="getLogin()" />
+        <p>Jika belum memiliki akun silahkan <a href="register.html">Daftar disini!</a></p>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="foot-bar">
+      <footer>
+        <p>Author: ©Shirohaku Dev Team-2022</p>
+        <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

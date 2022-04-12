@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/script.js"></script>
+        <title>Tambah Transaksi</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title"><a href="addTransaksi.html">Tambah Transaksi</a></h1>
+            <div class="top-bar">
+                <ul>
+                    <li class="h"><a href="index.html">HOME</a></li>
+                    <li><a href="showUser.html">Data User</a></li>
+                    <li><a href="showWalkas.html">Data Wali Kelas</a></li>
+                    <li><a href="showSiswa.html">Data Siswa</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="#" onclick="clearData()">Clear Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="mModal" class="modal">
+            <div id="modal-contents" class="modal-content">
+                <span class="close">&times;</span>
+                <span id="message"></span>
+            </div>
+        </div>
+        <br /><br />
+        <div class="rowAdd">
+            <div class="colAdd">
+                <form method="post">
+                    <div class="input-field">
+                        <input type="text" name="NIS" value="2212345005" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="Nama" value="Ferza" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="Kelas" value="12-E" readonly />
+                    </div>
+                    <br />
+                    <div class="input-field">
+                        <input type="text" name="Wali Kelas" value="Dwicaksana" readonly />
+                    </div>
+                    <br />
+                    <div class="drop-down">
+                        <select name="Transaksi" id="update-t">
+                            <option value="null">Pilih Status</option>
+                            <option value="Lunas">Lunas</option>
+                            <option value="Belum Lunas">Belum Lunas</option>
+                        </select>
+                    </div>
+                    <br />
+                </form>
+                <input type="submit" value="Simpan" onclick="addTransaction()" />
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="foot-bar">
+            <footer>
+                <p>Author: ©Shirohaku Dev Team-2022</p>
+                <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

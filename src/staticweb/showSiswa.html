@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Data Siswa</title>
+    </head>
+    <body onload="showSiswa()">
+        <div class="header">
+            <h1 class="title"><a href="showSiswa.html">Data Siswa</a></h1>
+            <div class="top-bar">
+                <ul>
+                    <li class="h"><a href="index.html">HOME</a></li>
+                    <li><a href="showUser.html">Data User</a></li>
+                    <li><a href="showWalkas.html">Data Wali Kelas</a></li>
+                    <li><a href="showSiswa.html">Data Siswa</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="#" onclick="clearData()">Clear Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="rowShow">
+            <div class="colShow">
+                <div class="table-page">
+                    <table>
+                        <tr>
+                            <th>NIS</th>
+                            <th>Nama Siswa</th>
+                            <th>Kelas</th>
+                            <th>Tahun Ajaran</th>
+                            <th>Biaya SPP</th>
+                            <th>Jatuh Tempo</th>
+                        </tr>
+                        <tr>
+                            <td>2212345001</td>
+                            <td>Abu</td>
+                            <td>10-A</td>
+                            <td>2021-2022</td>
+                            <td>250000</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td>2212345002</td>
+                            <td>Budi</td>
+                            <td>10-B</td>
+                            <td>2021-2022</td>
+                            <td>250000</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td>2212345003</td>
+                            <td>Cepi</td>
+                            <td>11-C</td>
+                            <td>2021-2022</td>
+                            <td>250000</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td>2212345004</td>
+                            <td>Dedi</td>
+                            <td>11-D</td>
+                            <td>2021-2022</td>
+                            <td>250000</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td>2212345005</td>
+                            <td>Endah</td>
+                            <td>12-E</td>
+                            <td>2021-2022</td>
+                            <td>250000</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td><span id="result-nis"></span></td>
+                            <td><span id="result-name"></span></td>
+                            <td><span id="result-class"></span></td>
+                            <td><span id="result-ta"></span></td>
+                            <td><span id="result-spp"></span></td>
+                            <td><span id="result-jt"></span></td>
+                        </tr>
+                    </table>
+                    <br />
+                    <a href="addSiswa.html"><input type="submit" name="add" value="Tambah Siswa" /></a>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="foot-bar">
+            <footer>
+                <p>Author: ©Shirohaku Dev Team-2022</p>
+                <p>Contact us: <a href="mailto:shirohakudteam@gmail.com">shirohakudteam@gmail.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
